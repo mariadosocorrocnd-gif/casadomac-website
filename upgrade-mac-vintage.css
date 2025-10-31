@@ -59,7 +59,7 @@ html {
 body {
     font-family: var(--fonte-principal);
     background-color: var(--cor-fundo-escuro);
-    background-image: url('balneario_camboriu_bg.jpg');
+    background-image: url('./balneario_camboriu_bg.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
