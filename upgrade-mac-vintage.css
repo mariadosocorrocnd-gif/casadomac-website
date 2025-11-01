@@ -59,7 +59,7 @@ html {
 body {
     font-family: var(--fonte-principal);
     background-color: var(--cor-fundo-escuro);
-    background-image: url('./balneario_camboriu_bg.jpg');
+    /* background-image: url('./balneario_camboriu_bg.jpg'); */
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -938,4 +938,73 @@ img[loading="lazy"].loaded {
 @font-face {
     font-family: 'Inter';
     font-display: swap;
+}
+
+/* ==========================================
+   TESTIMONIALS SECTION
+   ========================================== */
+
+.testimonials {
+    background: var(--cor-fundo-cinza);
+    padding: var(--espacamento-xl) 0;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--espacamento-md);
+}
+
+.testimonial-card {
+    background: var(--cor-fundo-escuro);
+    padding: var(--espacamento-lg);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.quote-icon {
+    font-size: 4rem;
+    color: var(--cor-verde-whatsapp);
+    line-height: 1;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    opacity: 0.1;
+    font-family: serif;
+}
+
+.quote-text {
+    font-size: 1.125rem;
+    color: var(--cor-texto-principal);
+    line-height: 1.6;
+    margin-bottom: var(--espacamento-md);
+    padding-top: var(--espacamento-sm);
+    z-index: 1;
+}
+
+.client-info {
+    border-top: 1px solid var(--cor-fundo-cinza-claro);
+    padding-top: var(--espacamento-sm);
+}
+
+.client-name {
+    font-weight: 700;
+    color: var(--cor-texto-principal);
+    margin-bottom: 4px;
+}
+
+.client-title {
+    font-size: 0.875rem;
+    color: var(--cor-texto-secundario);
+}
+
+/* Responsividade para a seção de depoimentos */
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
 }
